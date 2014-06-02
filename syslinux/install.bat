@@ -1,5 +1,7 @@
 set D=F:
 syslinux -m -i %D%
-rem copy syslinux.cfg %D%\
-rem copy memtest86.bin %D%\
+mkdir %D%\syslinux
+copy syslinux.* %D%\syslinux\
+copy memtest86.bin %D%\syslinux\
+copy *.c32 %D%\syslinux\
 pause
